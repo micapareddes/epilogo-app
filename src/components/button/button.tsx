@@ -12,7 +12,7 @@ const buttonVariants = cva(
         default:
           'bg-black dark:bg-white text-white dark:text-black hover:bg-primary-400 dark:hover:bg-primary-600 transition-colors',
         outline:
-          'border border-gray-500 dark:border-gray-600 text-gray-800 dark:text-white hover:border-primary-400 hover:text-primary-400 transition-colors',
+          'border border-gray-500 dark:border-gray-600 text-gray-800 dark:text-white hover:border-primary-400 dark:hover:border-primary-600 hover:text-primary-400 dark:hover:text-primary-600 transition-colors',
         'icon-primary':
           'group dark:bg-gray-700 dark:hover:bg-white shadow-around dark:shadow-contrast',
         'icon-outline':

@@ -10,7 +10,7 @@ const menuItems = ['Explorar', 'Minhas Listas', 'Perfil']
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between w-screen px-xl py-l border-b border-gray-100 dark:border-gray-800">
+    <header className="absolute flex items-center justify-between w-screen px-xl py-l border-b border-gray-100 dark:border-gray-800">
       <div className="flex items-center">
         <LogoSvg className="mr-m" />
 
@@ -18,7 +18,7 @@ export function Header() {
           return <HeaderItem content={item} key={item} />
         })}
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center gap-s">
         <Search />
         <LanguageSelector />
         <ThemeToggle />
