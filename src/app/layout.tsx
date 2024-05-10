@@ -4,7 +4,7 @@ import './globals.css'
 import { Header } from '@/components/header'
 import { cn } from '@/utils/cs'
 import Head from 'next/head'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@/components/ui/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 

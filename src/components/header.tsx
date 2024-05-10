@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from './button'
 import { HeaderItem } from './header-item'
+import { LanguageSelector } from './language-selector'
 import { LogoSvg } from './logo-svg'
 import { Search } from './search'
 import { ThemeToggle } from './theme-toggle'
@@ -20,7 +20,7 @@ export function Header() {
       </div>
       <div className="flex items-center">
         <Search />
-        <Button variant={'outline'}>oi</Button>
+        <LanguageSelector />
         <ThemeToggle />
       </div>
     </header>

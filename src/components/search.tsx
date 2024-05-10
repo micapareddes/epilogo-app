@@ -8,16 +8,16 @@ export function Search() {
           size={17}
           className="fill-gray-400 group-hover:fill-gray-700 dark:group-hover:fill-white"
         />
-        <p className="text-p5 text-gray-400 group-hover:text-gray-700 dark:group-hover:text-white ml-xs mr-m">
+        <p className="text-p5 text-gray-400 dark:text-gray-500 group-hover:text-gray-700 dark:group-hover:text-white ml-xs mr-m">
           Pesquise aqui
         </p>
       </div>
       <div className="flex items-center px-xs py-xxs bg-gray-100 dark:bg-gray-700 rounded-xxs">
         <Command
           size={12}
-          className="fill-gray-400 group-hover:fill-gray-700 dark:group-hover:fill-white"
+          className="dark:fill-gray-500 fill-gray-400 group-hover:fill-gray-700 dark:group-hover:fill-white"
         />
-        <p className="text-p6 text-gray-400 group-hover:text-gray-700 dark:group-hover:text-white ml-xxs uppercase">
+        <p className="text-p6 text-gray-400 dark:text-gray-500 group-hover:text-gray-700 dark:group-hover:text-white ml-xxs uppercase">
           k
         </p>
       </div>

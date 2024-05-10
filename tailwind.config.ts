@@ -14,6 +14,7 @@ const config: Config = {
 
       white: '#F3F3E9',
       black: '#1F1F1B',
+      contrast: '#181717',
 
       gray: {
         100: '#DCDCD3',
@@ -65,6 +66,9 @@ const config: Config = {
         xl: '2.625rem',
         xxl: '4.25rem',
         xxxl: '6.875rem',
+      },
+      boxShadow: {
+        around: '1px 2px 5px 0 rgba(31, 31, 27, 0.25);',
       },
     }, // acresenta ao tailwind
   },
