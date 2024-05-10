@@ -13,7 +13,7 @@ import { Translate } from '@phosphor-icons/react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { LanguageIsoIcon } from './language-iso-icon'
-import { ButtonIcon } from './button/button-icon'
+import { ButtonIcon } from '../button/button-icon'
 
 const languages = [
   {

@@ -1,10 +1,10 @@
 'use client'
 
 import { HeaderItem } from './header-item'
-import { LanguageSelector } from './language-selector'
-import { LogoSvg } from './logo-svg'
-import { Search } from './search'
-import { ThemeToggle } from './theme-toggle'
+import { LanguageSelector } from '../language-selector/language-selector'
+import { LogoSvg } from '../logo-svg'
+import { Search } from '../search'
+import { ThemeToggle } from '../theme-toggle'
 
 const menuItems = ['Explorar', 'Minhas Listas', 'Perfil']
 

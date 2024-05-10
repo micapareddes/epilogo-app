@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import { Button } from './button/button'
+import { Button } from '../button/button'
 
 interface LanguageIconProps extends ComponentProps<'button'> {
   content: string
