@@ -1,13 +1,13 @@
 import { cn } from '@/utils/cs'
 import { ComponentProps } from 'react'
 
-interface H2Props extends ComponentProps<'h2'> {
-  title: string
-}
-export function H2({ title, className, ...props }: H2Props) {
+interface H2Props extends ComponentProps<'h2'> {}
+
+export function H2({ className, ...props }: H2Props) {
   return (
-    <h2 className={cn('text-h2 font-bold', className)} {...props}>
-      {title}
-    </h2>
+    <h2
+      className={cn('font-bold text-sm-h2 md:text-md-h2 lg:text-h2', className)}
+      {...props}
+    />
   )
 }

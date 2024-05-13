@@ -23,7 +23,12 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
-      <body className={cn('bg-white dark:bg-black', inter.className)}>
+      <body
+        className={cn(
+          'min-h-screen antialiased bg-white dark:bg-black',
+          inter.className,
+        )}
+      >
         <ThemeProvider attribute="class">
           <Header />
           {children}

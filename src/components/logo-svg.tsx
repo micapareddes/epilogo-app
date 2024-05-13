@@ -1,7 +1,7 @@
 import { cn } from '@/utils/cs'
 import { ComponentProps } from 'react'
 
-interface LogoSvgProps extends ComponentProps<'svg'> {}
+export interface LogoSvgProps extends ComponentProps<'svg'> {}
 
 export function LogoSvg({ className, ...props }: LogoSvgProps) {
   return (
