@@ -5,19 +5,7 @@ import { LanguageSelector } from '../language-selector/language-selector'
 import { LogoSvg } from '../logo-svg'
 import { Search } from '../search'
 import { ThemeToggle } from '../theme-toggle'
-import { List } from '@phosphor-icons/react'
-import { ButtonIcon } from '../button/button-icon'
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from './sheet'
-import { BigLogo } from '../big-logo'
-import { DropdownMenuSeparator } from '../ui/dropdown-menu'
+import { HamburguerMenu } from './hamburguer-menu'
 
 const menuItems = ['Explorar', 'Minhas Listas', 'Perfil']
 
@@ -39,29 +27,7 @@ export function Header() {
           <ThemeToggle />
         </div>
       </div>
-      <Sheet>
-        <SheetTrigger asChild>
-          <ButtonIcon
-            icon={List}
-            variant="icon-primary"
-            className="block md:hidden"
-          />
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetDescription className="flex flex-col items-start">
-              {menuItems.map((item) => {
-                return <HeaderItem content={item} key={item} />
-              })}
-            </SheetDescription>
-            <DropdownMenuSeparator />
-            <SheetFooter className="flex-row gap-m items-center justify-center p-l">
-              <LanguageSelector />
-              <ThemeToggle />
-            </SheetFooter>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
+      <HamburguerMenu menuItems={menuItems} />
     </header>
   )
 }
