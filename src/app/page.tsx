@@ -10,8 +10,8 @@ export default function Home() {
         leituras organizadas!
       </H1>
       <p className="max-w-lg text-p2 text-center text-gray-600 dark:text-gray-200 mb-l ">
-        Crie listas, marque os dias em que leu, explore novos livros ou
-        acompanhe o que seus amigos estão lendo.
+        Crie listas, marque os dias em que leu, explore novos livros e acompanhe
+        o que seus amigos estão lendo.
       </p>
       <div className="flex gap-m">
         <Button>Criar conta</Button>
