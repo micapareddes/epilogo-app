@@ -11,7 +11,7 @@ export function ButtonIcon({ icon, ...props }: ButtonIconProps) {
     <Button variant={'icon-outline'} size={'small'} {...props}>
       <Component
         size={14}
-        className="group-hover:fill-white dark:group-hover:fill-black fill-gray-400 dark:fill-gray-500"
+        className="group-hover:fill-white dark:group-hover:fill-black fill-gray-400 dark:fill-gray-500 group-data-[state=open]:fill-black"
       />
     </Button>
   )

@@ -5,9 +5,9 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-import Brazil from '../../public/flags/brazil.svg'
-import Arg from '../../public/flags/arg.svg'
-import Usa from '../../public/flags/usa.svg'
+import Brazil from '../../../public/flags/brazil.svg'
+import Arg from '../../../public/flags/arg.svg'
+import Usa from '../../../public/flags/usa.svg'
 
 import { Translate } from '@phosphor-icons/react'
 import Image from 'next/image'
@@ -45,12 +45,14 @@ export function LanguageSelector() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        {language ? (
-          <LanguageIsoIcon content={language} />
-        ) : (
-          <ButtonIcon icon={Translate} />
-        )}
+      <DropdownMenuTrigger asChild>
+        <div className="group">
+          {language ? (
+            <LanguageIsoIcon content={language} />
+          ) : (
+            <ButtonIcon icon={Translate} />
+          )}
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {languages.map((language) => {

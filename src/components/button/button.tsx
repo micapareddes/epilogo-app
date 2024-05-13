@@ -16,7 +16,7 @@ const buttonVariants = cva(
         'icon-primary':
           'group dark:bg-gray-700 dark:hover:bg-white shadow-around dark:shadow-contrast',
         'icon-outline':
-          'group border border-gray-200 dark:border-gray-700 hover:bg-gray-800 hover:border-gray-800 dark:hover:bg-white',
+          'group border border-gray-200 dark:border-gray-700 hover:bg-gray-800 hover:border-gray-800 dark:hover:bg-white group-data-[state=open]:bg-white transition-colors',
       },
       size: {
         default: 'px-m py-xs',

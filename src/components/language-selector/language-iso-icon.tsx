@@ -8,7 +8,7 @@ interface LanguageIconProps extends ComponentProps<'button'> {
 export function LanguageIsoIcon({ content, ...props }: LanguageIconProps) {
   return (
     <Button variant={'icon-outline'} size={'small'} {...props}>
-      <span className="text-p6 text-gray-400 dark:text-gray-500 group-hover:text-white dark:group-hover:text-black">
+      <span className="text-p6 text-gray-400 dark:text-gray-500 group-hover:text-white dark:group-hover:text-black group-data-[state=open]:text-black">
         {content}
       </span>
     </Button>
