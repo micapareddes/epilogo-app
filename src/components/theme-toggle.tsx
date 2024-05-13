@@ -3,7 +3,7 @@ import { Switch } from './ui/switch'
 
 export function ThemeToggle() {
   const { setTheme } = useTheme()
-  const theme = localStorage.getItem('theme')
+  const theme = typeof window !== 'undefined' && localStorage.getItem('theme')
 
   function toogle() {
     if (theme === 'dark') {
