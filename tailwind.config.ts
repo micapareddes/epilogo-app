@@ -72,6 +72,6 @@ const config: Config = {
       },
     }, // acresenta ao tailwind
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 }
 export default config
