@@ -11,7 +11,7 @@ const menuItems = ['Explorar', 'Minhas Listas', 'Perfil']
 
 export function Header() {
   return (
-    <header className="absolute flex items-center justify-between w-screen px-m md:px-xl py-l border-b border-gray-100 dark:border-gray-800">
+    <header className="absolute flex items-center justify-between w-screen px-m md:px-xl py-l border-b border-gray-100 dark:border-gray-800 backdrop-blur-sm	">
       <div className="flex items-center">
         <LogoSvg className="" />
         <div className="hidden md:block ml-m">
