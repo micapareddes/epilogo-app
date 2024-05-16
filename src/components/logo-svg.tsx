@@ -1,4 +1,4 @@
-import { cn } from '@/utils/cs'
+import { cn } from '@/utils/cn'
 import { ComponentProps } from 'react'
 
 export interface LogoSvgProps extends ComponentProps<'svg'> {}

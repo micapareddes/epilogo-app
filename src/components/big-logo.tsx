@@ -1,4 +1,4 @@
-import { cn } from '@/utils/cs'
+import { cn } from '@/utils/cn'
 import { LogoSvgProps } from './logo-svg'
 
 export function BigLogo({ className, ...props }: LogoSvgProps) {

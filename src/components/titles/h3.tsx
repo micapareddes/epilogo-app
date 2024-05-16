@@ -1,4 +1,4 @@
-import { cn } from '@/utils/cs'
+import { cn } from '@/utils/cn'
 import { ComponentProps } from 'react'
 
 interface H3Props extends ComponentProps<'h3'> {}
