@@ -5,12 +5,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 
-import Brazil from '../../../public/flags/brazil.svg'
-import Arg from '../../../public/flags/arg.svg'
-import Usa from '../../../public/flags/usa.svg'
-
 import { Translate } from '@phosphor-icons/react'
-import Image from 'next/image'
 import { useState } from 'react'
 import { LanguageIsoIcon } from './language-iso-icon'
 import { ButtonIcon } from '../button/button-icon'
@@ -19,19 +14,19 @@ const languages = [
   {
     id: 'pt',
     name: 'Português',
-    flag: Brazil,
+    flag: '🇧🇷',
     iso: 'PT',
   },
   {
     id: 'es',
     name: 'Español',
-    flag: Arg,
+    flag: '🇦🇷',
     iso: 'ES',
   },
   {
     id: 'en',
     name: 'Engilsh',
-    flag: Usa,
+    flag: '🇺🇸',
     iso: 'EN',
   },
 ]
@@ -50,7 +45,7 @@ export function LanguageSelector() {
           {language ? (
             <LanguageIsoIcon content={language} />
           ) : (
-            <ButtonIcon icon={Translate} />
+            <ButtonIcon variant="icon-outline" icon={Translate} />
           )}
         </div>
       </DropdownMenuTrigger>
@@ -62,7 +57,7 @@ export function LanguageSelector() {
               className="gap-xs"
               onClick={() => handleSelectLanguage(language.iso)}
             >
-              <Image alt={language.flag} src={language.flag} />
+              <span className="text-p1 leading-4">{language.flag}</span>
               {language.name}
             </DropdownMenuItem>
           )
