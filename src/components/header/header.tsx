@@ -13,8 +13,8 @@ export function Header() {
   return (
     <header className="absolute flex items-center justify-between w-screen px-m md:px-xl py-l border-b border-gray-100 dark:border-gray-800 backdrop-blur-sm	">
       <div className="flex items-center">
-        <LogoSvg className="" />
-        <div className="hidden md:block ml-m">
+        <LogoSvg className="mr-2 cursor-pointer" />
+        <div className="hidden md:flex ml-m gap-5">
           {menuItems.map((item) => {
             return <HeaderItem content={item} key={item} />
           })}

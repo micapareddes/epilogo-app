@@ -12,7 +12,7 @@ export function LogoSvg({ className, ...props }: LogoSvgProps) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn(
-        'hover:fill-primary-400 dark:hover:fill-primary-400 fill-black dark:fill-white',
+        'hover:fill-primary-400 dark:hover:fill-primary-400 fill-black dark:fill-white transition-all duration-200',
         className,
       )}
       {...props}
